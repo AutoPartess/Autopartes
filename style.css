@@ -1,0 +1,338 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+header {
+    background: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+nav {
+    background: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.seccion {
+    padding: 40px;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contacto a {
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.cabecera {
+    background-image: url(pepe.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Puedes cambiar el tamaño */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Oscurece un poquito la imagen para que se lea bien */
+.cabecera::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.texto-header {
+    position: relative;
+ z-index:1;
+}
+
+.inicio {
+    background: #ffffff;
+    padding: 60px 20px;
+}
+
+.contenedor-inicio {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.inicio h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.subtitulo {
+    color: #1a73e8;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.descripcion {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.servicios-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.item-servicio {
+    background: #f5f5f5;
+    padding: 20px 25px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.item-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.icono {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* --- ESTILOS GENERALES --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* --- CABECERA --- */
+.cabecera {
+    background: url("pepe.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.texto-header h1 {
+    font-size: 38px;
+    margin: 0;
+}
+
+.texto-header p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+/* ----------- GENERAL ----------- */
+body {
+    margin: 0;
+    background: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ----------- MENÚ ----------- */
+nav {
+    background: #0d0d0d;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    margin: 0 25px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.activo {
+    color: #1a73e8;
+}
+
+/* ----------- CONTENEDOR ----------- */
+.contenedor-piezas {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* ----------- TÍTULOS DE CATEGORÍA ----------- */
+.titulo-categoria {
+    margin-top: 60px;
+    color: #222;
+    font-size: 28px;
+    font-weight: bold;
+    border-left: 6px solid #1a73e8;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+/* ----------- GRID DE PRODUCTOS ----------- */
+.grid-piezas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* ----------- TARJETAS ----------- */
+.item-pieza {
+    background: white;
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0px 4px 18px rgba(0,0,0,0.12);
+    transition: .25s;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+}
+
+.item-pieza:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 22px rgba(0,0,0,0.18);
+}
+
+/* Imagen más grande y con mejor enfoque */
+.item-pieza img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Nombre del producto */
+.item-pieza p {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333;
+    font-size: 17px;
+}
+
+/* ----------- FOOTER ----------- */
+footer {
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* --- SECCIÓN DE INFORMACIÓN DE CONTACTO --- */
+
+.info-contacto {
+    padding: 60px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.titulo-info {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.descripcion-info {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    width: 90%;
+    margin: auto;
+}
+
+.card-info {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    border-top: 4px solid #1a73e8;
+}
+
+.card-info:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.icono-info {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.card-info h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.card-info p {
+    color: #666;
+    font-size: 16px;
+}
